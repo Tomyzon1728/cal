@@ -120,15 +120,15 @@ btn3.grid(row=4, column=2)
 btn_mul = t.Button(window, text="  *  ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#073278',command = lambda: pocket('*'))
 btn_mul.grid(row=4, column=3)
 
-#          -----------FifthRow-------------
-btn_zero = t.Button(window, text="  0 ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = 'powder blue',command = lambda: on_screen(0))
-btn_zero.grid(row=5, column=0)
-btn_point = t.Button(window, text=" .  ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = 'powder blue',command = lambda: on_screen("."))
-btn_point.grid(row=5, column=1)
-btn_equal = t.Button(window, text=" = ",  padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#00ffff',command = lambda:equalto())
-btn_equal.grid(row=5, column=2)
-btn_div = t.Button(window, text="  /  ",  padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#073278',command = lambda: pocket('/'))
-btn_div.grid(row=5, column=3)
+# #          -----------FifthRow-------------
+# btn_zero = t.Button(window, text="  0 ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = 'powder blue',command = lambda: on_screen(0))
+# btn_zero.grid(row=5, column=0)
+# btn_point = t.Button(window, text=" .  ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = 'powder blue',command = lambda: on_screen("."))
+# btn_point.grid(row=5, column=1)
+# btn_equal = t.Button(window, text=" = ",  padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#00ffff',command = lambda:equalto())
+# btn_equal.grid(row=5, column=2)
+# btn_div = t.Button(window, text="  /  ",  padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#073278',command = lambda: pocket('/'))
+# btn_div.grid(row=5, column=3)
 
 
 window.mainloop()
