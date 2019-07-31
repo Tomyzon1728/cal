@@ -16,7 +16,7 @@ window.geometry("474x312+0+0")
 
 
 
-#------------------------CalulatorFunctions-------------------------------
+#------------------------CalulatorFunctions------------------------------------
 def on_screen(display):
     global screen,all_clear
     if all_clear == True:
