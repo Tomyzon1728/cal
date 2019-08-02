@@ -116,7 +116,7 @@ btn2 = t.Button(window, text="  2 ", padx= 16, bd = 2, fg='black', font =('couri
 btn2.grid(row=4, column=1)
 btn3 = t.Button(window, text=" 3 ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = 'powder blue',command = lambda: on_screen(3))
 btn3.grid(row=4, column=2)
-btn_mul = t.Button(window, text="  *  ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#073278',command = lambda: pocket('*'))
+btn_mul = t.Button(window, text="  x  ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#073278',command = lambda: pocket('*'))
 btn_mul.grid(row=4, column=3)
 
 #          -----------FifthRow-------------
