@@ -77,8 +77,7 @@ screen.insert(0,'0')
 
 
 
-
-                #---------FirstRow  Column<0 - 4>-----------------------
+#---------FirstRow  Column<0 - 4>--------------------------------------------------------------
 btn_clear = t.Button(window, text=" c  ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'), bg = '#00ffff',command = clear_screen)
 btn_clear.grid(row=1, column=0,)
 btn_allclear = t.Button(window, text="  ~ ", padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#00ffff',command = clear_screen)
