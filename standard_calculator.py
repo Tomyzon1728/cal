@@ -10,6 +10,7 @@ all_clear = False
 #---------------------------------WindowAttributes----------------------------------------
 window = t.Tk()
 window.title("CALCULATOR")
+window.wm_iconbitmap('cal.ico')
 window.resizable(width=False,height=False)
 window.geometry("474x312+0+0")
 
