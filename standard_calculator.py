@@ -1,11 +1,12 @@
 import tkinter as t
-#import math
+from winsound import Beep
+import math
+
 #-----------------------------GlobalVariables------------------------------------------------------
 screen = ''
 operator = ''
 fval = ''
 all_clear = False
-#screen_OnOff = True
 
 #---------------------------------WindowAttributes----------------------------------------
 window = t.Tk()
@@ -14,12 +15,13 @@ window.wm_iconbitmap('cal.ico')
 window.resizable(width=False,height=False)
 window.geometry("474x312+0+0")
 
-
-
-
 #------------------------CalulatorFunctions------------------------------------
+def btn_sound():
+    Beep(800,70)
+
 def on_screen(display):
     global screen,all_clear
+    btn_sound()
     if all_clear == True:
         screen.delete(0,"end")
         all_clear = False
@@ -30,20 +32,26 @@ def on_screen(display):
         s_length = len(screen.get())
         screen.insert(s_length,display)
         return
+
+# function to Clear screen after an operation 
 def clear_screen():
     global screen
     screen.delete(0,"end")
     screen.insert(0,'0')
     return
 
+# place holder for first variable 
 def pocket(cal):
     global screen, operator, fval
+    btn_sound()
     fval = float(screen.get())
     screen.delete(0,"end")
     operator = cal
 
+# This key performs basic arithmetic operation such as +,-,*,/
 def equalto():
     global screen, operator, fval,all_clear
+    btn_sound()
     all_clear = True
     if(operator == "+"):
         sval = float(screen.get())
@@ -66,7 +74,18 @@ def equalto():
         screen.delete(0,"end")
         screen.insert('end',result)
 
-
+# Scientific Functions
+def sqrt( ):
+	pass
+	
+def sine( ):
+	pass
+	
+def cosine( ):
+	pass
+	
+def tangent( ):
+	pass
 
 
 
