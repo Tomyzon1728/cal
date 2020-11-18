@@ -39,7 +39,11 @@ def clear_screen():
     screen.delete(0,"end")
     screen.insert(0,'0')
     return
-
+def delete ( ):
+        s_length = len(screen.get())
+        screen.insert(s_length-1)
+        return
+	
 # place holder for first variable 
 def pocket(cal):
     global screen, operator, fval
@@ -104,7 +108,7 @@ btn_allclear = t.Button(window, text="  ~ ", padx= 16, bd = 2, fg='black', font 
 btn_allclear.grid(row=1, column=1,)
 btn_del = t.Button(window, text=" d ",padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#00ffff',command = clear_screen)
 btn_del.grid(row=1, column=2,)
-btn_sqrt = btn_del = t.Button(window, text="  s  ",padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#00ffff',command =  clear_screen)
+btn_sqrt = btn_del = t.Button(window, text="  s  ",padx= 16, bd = 2, fg='black', font =('courier',20, 'bold'),bg = '#00ffff',command =  delete)
 btn_sqrt.grid(row=1, column=3,)
 
                   #----------SecondRow  Column<0 - 4>----------------------
